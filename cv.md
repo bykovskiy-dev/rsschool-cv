@@ -2,7 +2,7 @@
  
 ## Contact
 - Email: aleksandr.bykovskiy.dev@gmail.com
-- Location: Belgrade, Serbia
+- Location: [Belgrade, Serbia](https://www.google.com/maps/place/%D0%91%D0%B5%D0%BB%D0%B3%D1%80%D0%B0%D0%B4/@44.8099216,20.3789573,12.25z/data=!4m6!3m5!1s0x475a7aa3d7b53fbd:0x1db8645cf2177ee4!8m2!3d44.8125449!4d20.4612299!16zL20vMGZoemY?entry=ttu&g_ep=EgoyMDI2MDkwMi4wIKXMDSoASAFQAw%3D%3D)
 - GitHub: [github.com/bykovskiy-dev](https://github.com/bykovskiy-dev)
 - Discord: bykovskiydev
 ## About me
