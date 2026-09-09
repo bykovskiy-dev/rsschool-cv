@@ -1,0 +1,331 @@
+:root {
+  --primary: #0e7490;
+  --foreground: #12202a;
+  --background: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--foreground);
+  background-color: color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.page {
+  --page-padding: 3rem;
+  width: 100%;
+  max-width: 55rem;
+  margin: 0 auto;
+  padding: var(--page-padding);
+  background-color: var(--background);
+  border: 0.0625rem solid color-mix(in srgb, var(--primary) 20%, transparent);
+}
+
+.header {
+  margin-bottom: 2.25rem;
+}
+
+.header__intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.header__photo {
+  display: block;
+  width: 8.75rem;
+  height: 8.75rem;
+  object-fit: cover;
+  object-position: center;
+  border: 0.1875rem solid var(--primary);
+  border-radius: 50%;
+  background-color: var(--background);
+}
+
+.header__name {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  color: var(--foreground);
+}
+
+.header__role {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.nav {
+  margin-bottom: 1.25rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: underline solid transparent;
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.15em;
+  text-transform: uppercase;
+  color: var(--foreground);
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.nav__link:focus-visible {
+  color: var(--primary);
+  text-decoration-color: currentColor;
+}
+
+.contacts {
+  margin: 0;
+  padding: 1rem 1.125rem;
+  list-style: none;
+  background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+  border-left: 0.1875rem solid var(--primary);
+}
+
+.contacts__item {
+  margin: 0 0 0.375rem;
+  overflow: hidden;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__link {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  color: var(--primary);
+  text-decoration: underline solid transparent;
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.15em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.contacts__link:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.main {
+  display: block;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+.section__title {
+  margin: 0 0 0.875rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+  border-bottom: 0.125rem solid var(--primary);
+}
+
+.section__text {
+  margin: 0 0 0.75rem;
+  color: var(--foreground);
+}
+
+.section__text:last-child {
+  margin-bottom: 0;
+}
+
+.skills,
+.list {
+  margin: 0;
+  padding-left: 1.375rem;
+}
+
+.skills__item,
+.list__item {
+  margin-bottom: 0.625rem;
+  color: var(--foreground);
+}
+
+.skills__item:last-child,
+.list__item:last-child {
+  margin-bottom: 0;
+}
+
+.skills__label,
+.list__lead {
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.inline-link {
+  color: var(--primary);
+  text-decoration: underline solid transparent;
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.inline-link:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.code {
+  margin: 0;
+  padding: 1.125rem 1.25rem;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--background);
+  background-color: var(--foreground);
+  border-left: 0.25rem solid var(--primary);
+}
+
+.code code {
+  display: block;
+  width: max-content;
+  min-width: 100%;
+  font-family: inherit;
+  white-space: inherit;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2.5rem calc(-1 * var(--page-padding)) calc(-1 * var(--page-padding));
+  padding: 1.125rem var(--page-padding);
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+.footer__github,
+.footer__year {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--background);
+  text-decoration: none;
+}
+
+.footer__github {
+  text-decoration: underline solid transparent;
+  text-decoration-thickness: 0.0625rem;
+  text-underline-offset: 0.15em;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.footer__github:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.footer__course {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.footer__logo {
+  display: block;
+  width: 6.25rem;
+  height: auto;
+}
+
+@media (max-width: 45rem) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .page {
+    --page-padding: 2rem;
+    padding: var(--page-padding);
+  }
+
+  .header__name {
+    font-size: 1.875rem;
+  }
+
+  .header__photo {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .header__intro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header__identity {
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .footer__github {
+    white-space: nowrap;
+  }
+
+  .footer__course {
+    flex: 1 0 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .nav__link:hover {
+    color: var(--primary);
+    text-decoration-color: currentColor;
+  }
+
+  .contacts__link:hover,
+  .inline-link:hover,
+  .footer__github:hover {
+    text-decoration-color: currentColor;
+  }
+}
