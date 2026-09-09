@@ -26,7 +26,7 @@ clean code, thoughtful architecture decisions, and continuous learning.
 - **Other:** REST API integration, responsive/adaptive UI, basic backend (Node.js)
 ## Code example
  
-Solution to a Codewars kata ("Multiples of 3 or 5"):
+Example of the Singleton pattern in TypeScript:
  
 ```javascript
 // Singleton
