@@ -7,7 +7,7 @@
 - Discord: bykovskiydev
 ## About me
  
-Frontend developer with a strong focus on React and TypeScript, building
+Fullstack developer with a strong focus on React and TypeScript, building
 scalable web applications using Next.js and Feature-Sliced Design (FSD)
 architecture. Also experienced in cross-platform mobile development with
 Flutter. Currently expanding into fullstack engineering through RS School,
@@ -75,7 +75,7 @@ console.log(logger1 === logger2); // true — same instance
 - **RS School** — Fullstack Engineering course (in progress), 2026
 - **Yandex.Praktikum** — HTML, CSS, JavaScript, TypeScript, SOLID, GIT courses, 2025 — 2026
 
-## English level
+## Languages
  
 - **Russian** — native
 - **English** — B2 (Upper-Intermediate). Comfortable reading technical
